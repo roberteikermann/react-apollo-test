@@ -15,7 +15,7 @@ const QUERY = gql`
 //         ...data})});
 
 type Data = {
-    getAusruestungsStuecke: [
+    getItem: [
         {id:string
         name:string}
         ]
@@ -41,7 +41,7 @@ class Comp1 extends React.Component {
                         <div>Content #1</div>
                         <ul>
                         {
-                            data.getAusruestungsStuecke.map(item => <li>{ item.id } - { item.name }</li>)
+                            data.getItem.map(item => <li>{ item.id } - { item.name }</li>)
                         }
                         </ul>
                     </div>
